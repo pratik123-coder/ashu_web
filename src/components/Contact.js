@@ -60,6 +60,7 @@ const Contact = () => {
             <div className="mapouter">
               <div className="gmap_canvas">
                 <iframe
+                  title="G-map"
                   height={375}
                   style={{ width: "100%" }}
                   id="gmap_canvas"
