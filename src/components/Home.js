@@ -4,8 +4,13 @@ import Image from "next/image";
 
 const Home = ({ dark }) => {
   const [data, setData] = useState({});
-  useEffect(async () => {
-    setData(await fatchData("/static/info.json"));
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setData(await fatchData("/static/info.json"));
+    };
+
+    fetchData();
   }, []);
 
   return (

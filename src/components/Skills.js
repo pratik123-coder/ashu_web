@@ -4,11 +4,26 @@ import Image from "next/image";
 
 const Skills = ({ dark }) => {
   const [data, setData] = useState({});
-  useEffect(async () => {
-    setData(await fatchData("/static/info.json"));
-  }, []);
+
   useEffect(() => {
-    window.addEventListener("scroll", activeSkillProgress);
+    const fetchData = async () => {
+      setData(await fatchData("/static/info.json"));
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      activeSkillProgress();
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup function to remove event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
@@ -25,7 +40,6 @@ const Skills = ({ dark }) => {
                 <span>Design is Life</span>
                 <h3>I Develop Skills Regularly to Keep Me Update</h3>
                 <p>
-                  
                 </p>
               </div>
               <div
