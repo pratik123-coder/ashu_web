@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { activeSkillProgress, fatchData } from "../utilits";
+import Image from "next/image";
 
 const Skills = ({ dark }) => {
   const [data, setData] = useState({});
@@ -54,7 +55,7 @@ const Skills = ({ dark }) => {
               </div>
             </div>
             <div className="right">
-              <img src={`img/pic.png`} alt="image" />
+              <Image src={`/img/pic.png`} alt="image" height={1350} width={1080} />
             </div>
           </div>
         </div>

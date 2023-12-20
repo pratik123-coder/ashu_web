@@ -29,6 +29,7 @@ export const wowJsAnimation = () => {
     new WOW.WOW().init();
   }, 500);
 };
+
 export const customCursor = () => {
   var myCursor = document.querySelectorAll(".mouse-cursor"),
     hamburger = document.querySelector(".hamburger"),

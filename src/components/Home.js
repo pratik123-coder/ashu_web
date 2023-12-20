@@ -1,6 +1,6 @@
-
 import { useEffect, useState } from "react";
 import { fatchData } from "../utilits";
+import Image from "next/image";
 
 const Home = ({ dark }) => {
   const [data, setData] = useState({});
@@ -58,9 +58,11 @@ const Home = ({ dark }) => {
             </div>
             <div className="avatar">
               <div className="image">
-                <img
+                <Image
                   src={"/img/slider/DSC_0011.png"}
                   alt="image"
+                  height={500}
+                  width={500}
                 />
               </div>
             </div>

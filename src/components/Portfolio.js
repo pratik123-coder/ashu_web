@@ -1,7 +1,7 @@
 import Isotope from "isotope-layout";
 import { useEffect, useRef, useState } from "react";
 import { dataImage, portfolioHover } from "../utilits";
-import DetailsPopup from "./popup/DetailsPopup";
+import Image from "next/image";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -16,7 +16,6 @@ const Portfolio = () => {
     setTimeout(() => {
       isotope.current = new Isotope(".gallery_zoom", {
         itemSelector: ".grid-item",
-        //    layoutMode: "fitRows",
         percentPosition: true,
         masonry: {
           columnWidth: ".grid-item",
@@ -30,6 +29,7 @@ const Portfolio = () => {
     }, 500);
     return () => isotope.current.destroy();
   }, []);
+
   useEffect(() => {
     if (isotope.current) {
       filterKey === "*"
@@ -37,17 +37,17 @@ const Portfolio = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
+
   const handleFilterKeyChange = (key) => () => {
     setFilterKey(key);
   };
+
   const activeBtn = (value) => (value === filterKey ? "current" : "");
 
-  // Popup
-  const [popup, setPopup] = useState(false);
 
   return (
     <div className="dizme_tm_section" id="portfolio">
-      <DetailsPopup open={popup} close={() => setPopup(false)} />
+
       <div className="dizme_tm_portfolio">
         <div className="container">
           <div className="dizme_tm_main_title" data-align="center">
@@ -72,7 +72,7 @@ const Portfolio = () => {
                       
                       href="https://www.behance.net/embed/project/186294201?ilo0=1"
                     >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-56.jpg" alt="image" height={712} width={559}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/1.jpg"
@@ -96,7 +96,7 @@ const Portfolio = () => {
                       className="popup-vimeo"
                       href="https://player.vimeo.com/video/337293658?autoplay=1"
                     >
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-34.jpg" alt="image" height={632} width={870}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/3.png"
@@ -120,7 +120,7 @@ const Portfolio = () => {
                       className="soundcloude_link mfp-iframe audio"
                       href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                     >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-56.jpg" alt="image" height={700} width={427}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/2.png"
@@ -141,7 +141,7 @@ const Portfolio = () => {
                     data-category="Popup"
                   >
                     <a className="zoom" href="img/portfolio/5.png">
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-56.jpg" alt="image" height={980} width={735}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/5.png"
@@ -162,7 +162,7 @@ const Portfolio = () => {
                     data-category="Popup"
                   >
                     <a className="zoom" href="img/portfolio/4.jpg">
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-34.jpg" alt="image" height={472} width={700}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/4.png"
@@ -184,7 +184,7 @@ const Portfolio = () => {
                     data-category="Detail"
                   >
                     <a className="portfolio_popup" href="#">
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-34.jpg" alt="image" height={749} width={1332}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/6.png"
@@ -208,7 +208,7 @@ const Portfolio = () => {
                       
                       href="https://www.behance.net/embed/project/186294201?ilo0=1"
                     >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-56.jpg" alt="image" height={712} width={559}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/7.png"
@@ -232,7 +232,7 @@ const Portfolio = () => {
                       className="popup-vimeo"
                       href="https://player.vimeo.com/video/337293658?autoplay=1"
                     >
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-34.jpg" alt="image" height={427} width={700}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/8.png"
@@ -256,7 +256,7 @@ const Portfolio = () => {
                       className="soundcloude_link mfp-iframe audio"
                       href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                     >
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-56.jpg" alt="image" height={870} width={632}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/9.png"
@@ -277,7 +277,7 @@ const Portfolio = () => {
                     data-category="Popup"
                   >
                     <a className="zoom" href="img/portfolio/5.png">
-                      <img src="img/thumbs/42-56.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-56.jpg" alt="image" height={980} width={735}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/11.png"
@@ -298,7 +298,7 @@ const Portfolio = () => {
                     data-category="Popup"
                   >
                     <a className="zoom" href="img/portfolio/4.jpg">
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-34.jpg" alt="image" height={472} width={700}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/10.png"
@@ -320,7 +320,7 @@ const Portfolio = () => {
                     data-category="Detail"
                   >
                     <a className="portfolio_popup" href="#">
-                      <img src="img/thumbs/42-34.jpg" alt="image" />
+                      <Image src="/img/thumbs/42-34.jpg" alt="image" height={749} width={1332}/>
                       <div
                         className="main"
                         data-img-url="img/portfolio/12.png"
@@ -337,10 +337,10 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="brush_1 wow zoomIn" data-wow-duration="1s">
-          <img src="img/brushes/portfolio/1.png" alt="image" />
+          <Image src="/img/brushes/portfolio/1.png" alt="image" layout="fill" />
         </div>
         <div className="brush_2 wow fadeInRight" data-wow-duration="1s">
-          <img src="img/brushes/portfolio/2.png" alt="image" />
+          <Image src="/img/brushes/portfolio/2.png" alt="image" layout="fill" />
         </div>
       </div>
     </div>

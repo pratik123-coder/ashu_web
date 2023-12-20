@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Counter from "./Counter";
 const About = ({ dark }) => {
   return (
@@ -7,7 +8,7 @@ const About = ({ dark }) => {
           <div className="wrapper">
             <div className="left">
               <div className="image">
-                <img src={`img/about/about.png`} alt="image" />
+                <Image src={`/img/about/about.png`} alt="image" height={1350} width={1080}/>
                 <div className="numbers year">
                   <div className="wrapper">
                     <h3>
