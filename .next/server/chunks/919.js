@@ -121,11 +121,13 @@ const customCursor = () => {
       t = document.querySelector(".cursor-outer");
 
   function mouseEvent(element) {
-    react_dom__WEBPACK_IMPORTED_MODULE_0___default().findDOMNode(element).addEventListener("mouseenter", function () {
-      e.classList.add("cursor-hover"), t.classList.add("cursor-hover");
+    element.addEventListener("mouseenter", function () {
+      e.classList.add("cursor-hover");
+      t.classList.add("cursor-hover");
     });
-    react_dom__WEBPACK_IMPORTED_MODULE_0___default().findDOMNode(element).addEventListener("mouseleave", function () {
-      e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover");
+    element.addEventListener("mouseleave", function () {
+      e.classList.remove("cursor-hover");
+      t.classList.remove("cursor-hover");
     });
   }
 
@@ -133,14 +135,16 @@ const customCursor = () => {
     if (document.body) {
       let n,
           i = 0,
-          o = !1;
+          o = false;
+
       window.onmousemove = function (s) {
-        // console.log(document.querySelector(this));
-        o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX;
-      }, document.body.addEventListener("mouseenter", // "a,.kura_tm_topbar .trigger, .cursor-pointer",
-      function () {
+        o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX);
+      };
+
+      document.body.addEventListener("mouseenter", function () {
         let a = document.querySelectorAll("a");
-        e.classList.add("cursor-inner"), t.classList.add("cursor-outer");
+        e.classList.add("cursor-inner");
+        t.classList.add("cursor-outer");
 
         for (let i = 0; i < a.length; i++) {
           const element = a[i];
@@ -150,7 +154,9 @@ const customCursor = () => {
         hamburger && mouseEvent(hamburger);
         kura_tm_topbar && mouseEvent(kura_tm_topbar);
         pointer && mouseEvent(pointer);
-      }), e.style.visibility = "visible", t.style.visibility = "visible";
+      });
+      e.style.visibility = "visible";
+      t.style.visibility = "visible";
     }
   }
 };
@@ -165,7 +171,7 @@ const aTagClick = () => {
 
   for (let i = 0; i < aTag.length; i++) {
     const a = aTag[i];
-    react_dom__WEBPACK_IMPORTED_MODULE_0___default().findDOMNode(a).addEventListener("click", e => {
+    a.addEventListener("click", e => {
       e.preventDefault();
     });
   }
