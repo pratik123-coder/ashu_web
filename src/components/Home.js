@@ -51,7 +51,7 @@ const Home = ({ dark }) => {
                       data.social &&
                       data.social.map((social, i) => (
                         <li key={i}>
-                          <a href={social.url} target="_blank">
+                          <a href={social.url}>
                             <i className={social.icon} />
                           </a>
                         </li>

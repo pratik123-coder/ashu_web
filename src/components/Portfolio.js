@@ -70,7 +70,6 @@ const Portfolio = () => {
                   >
                     <a
                       href="https://www.behance.net/embed/project/186294201?ilo0=1"
-                      target="_blank"
                     >
                       <Image src="/img/thumbs/42-56.jpg" alt="image" height={712} width={559}/>
                       <div
