@@ -46,16 +46,15 @@ const Home = ({ dark }) => {
                   </a>
                 </div>
                 <div className="social">
-                  <ul>
+                <ul>
                     {data &&
                       data.social &&
                       data.social.map((social, i) => (
                         <li key={i}>
-                          <a>
+                          <a href={social.url} target="_blank">
                             <i className={social.icon} />
                           </a>
                         </li>
-
                       ))}
                   </ul>
                 </div>

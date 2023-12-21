@@ -65,12 +65,12 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Mockup Shape"
-                    data-category="Youtube"
+                    data-title="K-Star 2023"
+                    data-category="Behance"
                   >
                     <a
-                      
                       href="https://www.behance.net/embed/project/186294201?ilo0=1"
+                      target="_blank"
                     >
                       <Image src="/img/thumbs/42-56.jpg" alt="image" height={712} width={559}/>
                       <div
@@ -80,8 +80,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Mockup Shape</h3>
-                    <span>Youtube</span>
+                    <h3>K-Star 2023</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
@@ -89,12 +89,11 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Ave Bottle"
-                    data-category="Vimeo"
+                    data-title="TEDxKIITUNIVERSITY 2023"
+                    data-category="Behance"
                   >
                     <a
-                      className="popup-vimeo"
-                      href="https://player.vimeo.com/video/337293658?autoplay=1"
+                      href="https://www.behance.net/embed/project/168619765?ilo0=1"
                     >
                       <Image src="/img/thumbs/42-34.jpg" alt="image" height={632} width={870}/>
                       <div
@@ -104,8 +103,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Ave Bottle</h3>
-                    <span>Vimeo</span>
+                    <h3>TEDxKIITUNIVERSITY 2023</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
@@ -113,12 +112,12 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Magic Art"
-                    data-category="Soundcloud"
+                    data-title="Burrito Khazana"
+                    data-category="Behance"
                   >
                     <a
                       className="soundcloude_link mfp-iframe audio"
-                      href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                      href="https://www.behance.net/embed/project/168270451?ilo0=1"
                     >
                       <Image src="/img/thumbs/42-56.jpg" alt="image" height={700} width={427}/>
                       <div
@@ -128,8 +127,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Magic Art</h3>
-                    <span>Soundcloud</span>
+                    <h3>Burrito Khazana</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
@@ -137,10 +136,10 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Scott Felix"
-                    data-category="Popup"
+                    data-title="KIIT MUN 2023"
+                    data-category="Behance"
                   >
-                    <a className="zoom" href="img/portfolio/5.png">
+                    <a className="zoom" href="https://www.behance.net/embed/project/179441147?ilo0=1">
                       <Image src="/img/thumbs/42-56.jpg" alt="image" height={980} width={735}/>
                       <div
                         className="main"
@@ -149,8 +148,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Blue Lemon</h3>
-                    <span>Popup</span>
+                    <h3>KIIT MUN 2023</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
@@ -158,10 +157,10 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Art Stone"
-                    data-category="Popup"
+                    data-title="KSAC Diary"
+                    data-category="Behance"
                   >
-                    <a className="zoom" href="img/portfolio/4.jpg">
+                    <a className="zoom" href="https://www.behance.net/embed/project/179153185?ilo0=1">
                       <Image src="/img/thumbs/42-34.jpg" alt="image" height={472} width={700}/>
                       <div
                         className="main"
@@ -170,20 +169,20 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Art Stone</h3>
-                    <span>Popup</span>
+                    <h3>KSAC Diary</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
 
-              <li className="detail grid-item" onClick={() => setPopup(true)}>
+              <li className="detail grid-item" >
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Global Evolution"
-                    data-category="Detail"
+                    data-title="KIIT MUN 2022"
+                    data-category="Behance"
                   >
-                    <a className="portfolio_popup" href="#">
+                    <a className="portfolio_popup" href="https://www.behance.net/embed/project/152899063?ilo0=1">
                       <Image src="/img/thumbs/42-34.jpg" alt="image" height={749} width={1332}/>
                       <div
                         className="main"
@@ -192,8 +191,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Global Evolution</h3>
-                    <span>Detail</span>
+                    <h3>KIIT MUN 2022</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
@@ -201,12 +200,12 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Mockup Shape"
-                    data-category="Youtube"
+                    data-title="KSAC Wall"
+                    data-category="Behance"
                   >
                     <a
                       
-                      href="https://www.behance.net/embed/project/186294201?ilo0=1"
+                      href="https://www.behance.net/embed/project/155470913?ilo0=1"
                     >
                       <Image src="/img/thumbs/42-56.jpg" alt="image" height={712} width={559}/>
                       <div
@@ -216,8 +215,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Mockup Shape</h3>
-                    <span>Youtube</span>
+                    <h3>KSAC Wall</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
@@ -225,12 +224,12 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Ave Bottle"
-                    data-category="Vimeo"
+                    data-title="Kreative Eye"
+                    data-category="Behance"
                   >
                     <a
                       className="popup-vimeo"
-                      href="https://player.vimeo.com/video/337293658?autoplay=1"
+                      href="https://www.behance.net/embed/project/152902303?ilo0=1"
                     >
                       <Image src="/img/thumbs/42-34.jpg" alt="image" height={427} width={700}/>
                       <div
@@ -240,8 +239,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Ave Bottle</h3>
-                    <span>Vimeo</span>
+                    <h3>Kreative Eye</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
@@ -249,12 +248,12 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Magic Art"
-                    data-category="Soundcloud"
+                    data-title="KIIT Student Activity Center"
+                    data-category="Behance"
                   >
                     <a
-                      className="soundcloude_link mfp-iframe audio"
-                      href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                      
+                      href="https://www.behance.net/embed/project/176768761?ilo0=1"
                     >
                       <Image src="/img/thumbs/42-56.jpg" alt="image" height={870} width={632}/>
                       <div
@@ -264,8 +263,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Magic Art</h3>
-                    <span>Soundcloud</span>
+                    <h3>KIIT Student Activity Center</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
@@ -273,10 +272,10 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Scott Felix"
-                    data-category="Popup"
+                    data-title="Startup Grind"
+                    data-category="Behance"
                   >
-                    <a className="zoom" href="img/portfolio/5.png">
+                    <a className="zoom" href="https://www.behance.net/embed/project/180570307?ilo0=1">
                       <Image src="/img/thumbs/42-56.jpg" alt="image" height={980} width={735}/>
                       <div
                         className="main"
@@ -285,8 +284,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Blue Lemon</h3>
-                    <span>Popup</span>
+                    <h3>Startup Grind</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
@@ -294,10 +293,10 @@ const Portfolio = () => {
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Art Stone"
-                    data-category="Popup"
+                    data-title="Little Paws Care"
+                    data-category="Behance"
                   >
-                    <a className="zoom" href="img/portfolio/4.jpg">
+                    <a className="zoom" href="https://www.behance.net/embed/project/152903551?ilo0=1">
                       <Image src="/img/thumbs/42-34.jpg" alt="image" height={472} width={700}/>
                       <div
                         className="main"
@@ -306,20 +305,20 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Art Stone</h3>
-                    <span>Popup</span>
+                    <h3>Little Paws Care</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
 
-              <li className="detail grid-item" onClick={() => setPopup(true)}>
+              <li className="detail grid-item" >
                 <div className="inner">
                   <div
                     className="entry dizme_tm_portfolio_animation_wrap"
-                    data-title="Global Evolution"
-                    data-category="Detail"
+                    data-title="TEDxKIITUNIVERSITY 2022"
+                    data-category="Behance"
                   >
-                    <a className="portfolio_popup" href="#">
+                    <a className="portfolio_popup" href="https://www.behance.net/embed/project/152744069?ilo0=1">
                       <Image src="/img/thumbs/42-34.jpg" alt="image" height={749} width={1332}/>
                       <div
                         className="main"
@@ -328,8 +327,8 @@ const Portfolio = () => {
                     </a>
                   </div>
                   <div className="mobile_title">
-                    <h3>Global Evolution</h3>
-                    <span>Detail</span>
+                    <h3>TEDxKIITUNIVERSITY 2022</h3>
+                    <span>Behance</span>
                   </div>
                 </div>
               </li>
